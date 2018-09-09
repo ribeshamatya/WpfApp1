@@ -1,0 +1,80 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+       
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" FontWeight="ExtraBold">
+    <Window.Foreground>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF992020" Offset="0"/>
+            <GradientStop Color="#FFB81515" Offset="0.318"/>
+        </LinearGradientBrush>
+    </Window.Foreground>
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF977E2B" Offset="0"/>
+            <GradientStop Color="White" Offset="1"/>
+            <GradientStop Color="#FFEEBF22" Offset="0.172"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="500"/>
+            <ColumnDefinition Width="500"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Momo Station" HorizontalAlignment="Center" Grid.Row="0" FontSize="28" FontFamily="Comic Sans MS" FontStyle="Italic" Margin="10"/>
+
+        <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" >
+            <TextBlock Text="Menu :" FontStyle="Italic" FontFamily="Comic Sans MS" FontSize="24" Margin="20" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" >
+            <TextBlock Text="Price :" FontStyle="Italic" FontFamily="Comic Sans MS" FontSize="24" Margin="20" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Grid.Column="0" Margin="0,3,0,29" Grid.RowSpan="2"  >
+            <TextBlock Text=" Chicken Momo" FontFamily="Comic Sans MS" FontStyle="Italic" FontSize="24" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Vertical" Grid.RowSpan="3" Margin="0,4,0,19.17">
+            <TextBlock Text=" Buff Momo" FontFamily="Comic Sans MS" FontStyle="Italic" FontSize="24" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="5" Grid.Column="0" Grid.RowSpan="2" Margin="0,5,0,19.17" >
+            <TextBlock Text=" Paneer Momo" FontFamily="Comic Sans MS" FontStyle="Italic" FontSize="24" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="6" Grid.Column="0"  >
+            <TextBlock Text=" C.Momo" FontFamily="Comic Sans MS" FontStyle="Italic" FontSize="24" />
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="3"  >
+            <TextBlock Text="RS 135" FontFamily="Comic Sans MS" FontSize="24" FontStyle="Italic" />
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="4"  >
+            <TextBlock Text="RS 110" FontFamily="Comic Sans MS" FontSize="24" FontStyle="Italic" />
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="5"  >
+            <TextBlock Text="RS 140" FontFamily="Comic Sans MS" FontSize="24" FontStyle="Italic" />
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="6"  >
+            <TextBlock Text="RS 180" FontFamily="Comic Sans MS" FontSize="24" FontStyle="Italic" />
+        </StackPanel>
+    </Grid>
+</Window>
